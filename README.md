@@ -1,6 +1,6 @@
 # vquery
 
-A small utility to fetch data from Vega APIs.
+A small utility to fetch data from [Vega](https://vega.xyz/) APIs.
 
 
 ## Features
@@ -14,9 +14,11 @@ A small utility to fetch data from Vega APIs.
 
 ## Running it
 
-Run or compile the script yourself with [Fennel](https://fennel-lang.org/). You can also download a binary (which bundles the transpiled output and a Lua runtime into a single excutable) from the release page. Currently the only binary release is for macOS but cross compilation for other systems is theoretically possible, and I may also release the transpiled Lua output in future.
+Run or compile the script yourself with [Fennel](https://fennel-lang.org/). It requires the [dkjson]([http://dkolf.de/dkjson-lua/](https://luarocks.org/modules/dhkolf/dkjson)) library, which can be installed with [Luarocks](https://luarocks.org/) or probably some other way if you prefer.
 
-On a Mac, running `make install` will compile the binary and copy it to `~/Library/bin`, at least if you have Fennel and Lua installed via Homebrew.
+You can also download a binary (which bundles the transpiled output and a Lua runtime into a single excutable) from the [release](https://github.com/barnabee/vquery/releases/latest) page. Currently the only binary release is for macOS but [cross compilation for other systems is theoretically possible](https://wiki.fennel-lang.org/Distribution#binary-executable), and I may also release the transpiled Lua output in future.
+
+On a Mac, running `make install` will compile the binary and copy it to `~/Library/bin`, at least if you have Fennel and Lua installed via [Homebrew](https://brew.sh).
 
 
 ## Usage examples
@@ -33,7 +35,7 @@ Get up to 5 pages of positions:
 % VEGA_MAX_PAHGES=5 vquery positions
 ```
 
-View open depsosits in visidata:
+View open depsosits in [Visidata](https://www.visidata.org/):
 
 ```
 % vquery deposits | grep STATUS_OPEN | vd
@@ -54,8 +56,8 @@ This gives you:
 - Shorter names, save your fingers!
 - Separate aliases `qv` (query Vega) for mainnet and `qf` (query Fairground) for testnet
 - Takes a second parameter to filter the output using grep
-- Automatically passes the response to Visidata
-- Saves the Visidate output (when you exit vd with ctrl-q) to `.last.vega.tsv` or `.last.fairground.tsv` in your home directory
+- Automatically passes the response to [Visidata](https://www.visidata.org/)
+- Saves the Visidata output (when you exit vd with ctrl-q) to `.last.vega.tsv` or `.last.fairground.tsv` in your home directory
 
 ```
 function mainnet() {
