@@ -15,6 +15,12 @@ A small utility to fetch data from [Vega](https://vega.xyz/) APIs.
 
 ## Running it
 
+For the impatient Mac user (h/t @edd):
+
+```
+brew install saulpw/vd/visidata; brew install fennel; brew install luarocks; luarocks install dkjson; make; ./vquery markets | vd
+```
+
 Run or compile the script yourself with [Fennel](https://fennel-lang.org/). It requires the [dkjson]([http://dkolf.de/dkjson-lua/](https://luarocks.org/modules/dhkolf/dkjson)) library, which can be installed with [Luarocks](https://luarocks.org/) or probably some other way if you prefer.
 
 You can also download a binary (which bundles the transpiled output and a Lua runtime into a single excutable) from the [release](https://github.com/barnabee/vquery/releases/latest) page. Currently the only binary release is for macOS but [cross compilation for other systems is theoretically possible](https://wiki.fennel-lang.org/Distribution#binary-executable), and I may also release the transpiled Lua output in future.
