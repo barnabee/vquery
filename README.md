@@ -57,7 +57,7 @@ This gives you:
 - Separate aliases `qv` (query Vega) for mainnet and `qf` (query Fairground) for testnet
 - Takes a second parameter to filter the output using grep
 - Automatically passes the response to [Visidata](https://www.visidata.org/)
-- Saves the Visidata output (when you exit vd with ctrl-q) to `.last.vega.tsv` or `.last.fairground.tsv` in your home directory
+- Saves the Visidata output (when you exit vd with ctrl-q) to a file specified with the 3rd argument, or `.last.vega.tsv` or `.last.fairground.tsv` in your home directory if no file is specified
 
 ```
 function mainnet() {
