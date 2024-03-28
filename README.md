@@ -16,6 +16,8 @@ A small utility to fetch data from Vega APIs.
 
 Run or compile the script yourself with [Fennel](https://fennel-lang.org/). You can also download a binary (which bundles the transpiled output and a Lua runtime into a single excutable) from the release page. Currently the only binary release is for macOS but cross compilation for other systems is theoretically possible, and I may also release the transpiled Lua output in future.
 
+On a Mac, running `make install` will compile the binary and copy it to `~/Library/bin`, at least if you have Fennel and Lua installed via Homebrew.
+
 
 ## Usage examples
 
