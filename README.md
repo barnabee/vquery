@@ -42,7 +42,7 @@ View open depsosits in visidata:
 See all accounts and their balances on Fairground testnet:
 
 ```
-VEGA_DATA_NODE=https://api.n07.testnet.vega.xyz vquery accounts
+% VEGA_DATA_NODE=https://api.n07.testnet.vega.xyz vquery accounts
 ```
 
 
