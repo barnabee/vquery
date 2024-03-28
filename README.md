@@ -7,9 +7,10 @@ A small utility to fetch data from [Vega](https://vega.xyz/) APIs.
 
 - Automatically prefixes data node URL
 - Can use a custom URL if set via environment variable (VEGA_DATA_NODE)
-- Requests next page if results don't fit in a single page
+- Requests more pages of data automatically if results don't fit in a single page
 - Emits result data in JSON lines format (suitable for piping rows to `grep`, `visidata`, etc.)
 - Limit number of pages, customisable by environment variable (VEGA_MAX_PAGES)
+- Emits results as they arrive for multi-page queries
 
 
 ## Running it
